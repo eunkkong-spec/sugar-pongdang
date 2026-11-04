@@ -1,0 +1,9 @@
+.main-visual {
+  padding: 0 16px;
+}
+
+.main-visual img {
+  width: 100%;
+  aspect-ratio: 1 / 0.8;
+  object-fit: cover;
+}

@@ -1,0 +1,73 @@
+.product-list-page {
+  padding-top: 24px;
+}
+
+.product-list-page .page-title {
+  margin-bottom: 16px;
+  font-size: var(--fs-section);
+  font-weight: normal;
+}
+
+.product-list-page .chips {
+  display: flex;
+  gap: 8px;
+  margin: 0 -16px 16px;
+  padding: 0 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.product-list-page .chips::-webkit-scrollbar {
+  display: none;
+}
+
+.product-list-page .chips button {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-badge);
+  background: var(--white);
+  font-size: var(--fs-small);
+  white-space: nowrap;
+}
+
+.product-list-page .chips .active {
+  border-color: var(--peach-500);
+  background: var(--peach-500);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.product-list-page .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: var(--fs-small);
+  color: var(--gray);
+}
+
+.product-list-page .toolbar strong {
+  color: var(--choco);
+}
+
+.product-list-page select {
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-badge);
+  background: var(--white);
+  color: var(--choco);
+  font: inherit;
+  font-size: var(--fs-small);
+}
+
+.product-list-page .empty {
+  padding: 80px 0;
+  text-align: center;
+  color: var(--gray);
+}
+
+.product-list-page .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 12px;
+}

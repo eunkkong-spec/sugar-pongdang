@@ -1,0 +1,527 @@
+{
+  "meta": {
+    "shop": "슈가퐁당",
+    "updated": "2026-11-04",
+    "sampleData": true
+  },
+  "categories": [
+    { "key": "birthday", "name": "생일" },
+    { "key": "anniversary", "name": "기념일" },
+    { "key": "photo", "name": "포토" },
+    { "key": "thanks", "name": "감사" },
+    { "key": "celebration", "name": "축하" },
+    { "key": "fan", "name": "팬·아이돌" },
+    { "key": "topper", "name": "케이크 토퍼" }
+  ],
+  "common": {
+    "cake": {
+      "options": {
+        "size": [
+          { "name": "1호", "price": 0 },
+          { "name": "2호", "price": 15000 },
+          { "name": "3호", "price": 30000 }
+        ],
+        "flavor": ["바닐라", "초코", "딸기", "얼그레이"]
+      },
+      "storage": "냉장 보관, 수령 후 2일 이내 섭취",
+      "allergens": ["우유", "계란", "밀", "대두"],
+      "delivery": {
+        "method": ["퀵배송", "매장픽업"],
+        "region": "국내(서울·경기)",
+        "fee": 6000,
+        "freeOver": 100000
+      }
+    },
+    "topper": {
+      "storage": "직사광선을 피해 실온 보관",
+      "delivery": {
+        "method": ["택배"],
+        "region": "국내·해외",
+        "fee": 3000,
+        "overseasFee": 15000,
+        "freeOver": 50000
+      }
+    }
+  },
+  "products": [
+    {
+      "id": 1, "type": "cake", "category": "photo",
+      "image": "images/cakes/cake_01.jpg",
+      "title": "블루 레이스 액자 포토 케이크",
+      "description": "소중한 사람의 가장 빛나는 순간을 남기고 싶다면, 액자 속 사진으로 그날의 기억을 케이크 위에 담아보세요.",
+      "detail": {
+        "intro": [
+          "블루 색상의 액자 포토 케이크 입니다.",
+          "사진, 문구 변경 가능 합니다.",
+          "변경 내용은 카카오톡 혹은 고객센터로 알려주시면 확인해드리겠습니다.^^",
+          "원하시는 모습에 따라서 견적은 조금씩 다르게 나오실수 있습니다."
+        ],
+        "sampleSize": "샘플사이즈는 1단케이크 S사이즈 (2호-지름18cm)로 제작된 케이크 입니다.",
+        "images": [
+          { "src": "images/detail/cake_01_frame.jpg", "alt": "블루 액자와 사진 부분 확대" },
+          { "src": "images/detail/cake_01_lettering.jpg", "alt": "케이크 옆면 레터링 확대" },
+          { "src": "images/detail/cake_01_ribbon.jpg", "alt": "하늘색 리본 장식 확대" }
+        ]
+      },
+      "originalPrice": 89000, "discountRate": 15,
+      "hashtags": ["#포토케이크", "#액자케이크", "#생일선물"],
+      "badges": ["BEST", "커스텀"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.8, "reviewCount": 132,
+      "reviews": [
+        { "user": "김**", "rating": 5, "content": "사진 인쇄가 선명해서 받는 사람이 한참 들여다봤어요.", "date": "2026-10-21" },
+        { "user": "박**", "rating": 4.5, "content": "블루 레이스가 사진보다 실물이 더 고급스러워요.", "date": "2026-10-08" }
+      ]
+    },
+    {
+      "id": 2, "type": "cake", "category": "birthday",
+      "image": "images/cakes/cake_02.jpg",
+      "title": "풍선 캐릭터 축하 케이크",
+      "description": "아이의 생일 파티를 더 신나게 만들고 싶다면, 알록달록 풍선과 귀여운 캐릭터가 테이블을 환하게 밝혀줍니다.",
+      "originalPrice": 69000, "discountRate": 10,
+      "hashtags": ["#키즈생일", "#풍선케이크", "#캐릭터케이크"],
+      "badges": ["NEW"],
+      "customizable": true, "leadTime": "최소 3일 전 예약",
+      "rating": 4.7, "reviewCount": 58,
+      "reviews": [
+        { "user": "이**", "rating": 5, "content": "아이가 케이크 보자마자 소리 지르며 좋아했어요.", "date": "2026-10-18" },
+        { "user": "최**", "rating": 4.5, "content": "풍선 장식이 흔들림 없이 잘 도착했습니다.", "date": "2026-09-30" }
+      ]
+    },
+    {
+      "id": 3, "type": "cake", "category": "fan",
+      "image": "images/cakes/cake_03.jpg",
+      "title": "퍼플 팬덤 레터링 케이크",
+      "description": "최애의 데뷔 기념일을 특별하게 축하하고 싶다면, 응원 문구와 포토로 팬심을 가득 채운 케이크를 준비해보세요.",
+      "originalPrice": 98000, "discountRate": 15,
+      "hashtags": ["#생일카페", "#팬덤케이크", "#데뷔기념"],
+      "badges": ["주문폭주", "커스텀"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.9, "reviewCount": 87,
+      "reviews": [
+        { "user": "정**", "rating": 5, "content": "생일카페에 두었더니 다들 사진 찍느라 바빴어요.", "date": "2026-10-25" },
+        { "user": "한**", "rating": 5, "content": "요청한 문구 그대로 꼼꼼하게 반영해주셨어요.", "date": "2026-10-02" }
+      ]
+    },
+    {
+      "id": 4, "type": "cake", "category": "celebration",
+      "image": "images/cakes/cake_04.jpg",
+      "title": "축하 메시지 레터링 2단 케이크",
+      "description": "말로 다 전하기 어려운 축하를 건네고 싶다면, 원하는 문장을 그대로 새긴 2단 케이크로 마음을 표현해보세요.",
+      "originalPrice": 109000, "discountRate": 20,
+      "hashtags": ["#레터링케이크", "#2단케이크", "#축하케이크"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.7, "reviewCount": 46,
+      "reviews": [
+        { "user": "윤**", "rating": 5, "content": "2단이라 단체 축하 자리에서 존재감이 확실했어요.", "date": "2026-10-14" },
+        { "user": "장**", "rating": 4.5, "content": "레터링 글씨체가 깔끔하고 예뻤습니다.", "date": "2026-09-27" }
+      ]
+    },
+    {
+      "id": 5, "type": "cake", "category": "birthday",
+      "image": "images/cakes/cake_05.jpg",
+      "title": "넘버 36 피규어 케이크",
+      "description": "나이의 숫자까지 의미 있게 축하하고 싶다면, 주인공을 닮은 피규어와 넘버 토퍼로 세상에 하나뿐인 생일을 만들어보세요.",
+      "originalPrice": 79000, "discountRate": 10,
+      "hashtags": ["#피규어케이크", "#넘버케이크", "#남자친구생일"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.8, "reviewCount": 64,
+      "reviews": [
+        { "user": "임**", "rating": 5, "content": "피규어가 남편이랑 정말 닮아서 다 같이 웃었어요.", "date": "2026-10-11" },
+        { "user": "오**", "rating": 4.5, "content": "피규어는 따로 보관할 수 있어서 좋아요.", "date": "2026-09-19" }
+      ]
+    },
+    {
+      "id": 6, "type": "cake", "category": "birthday",
+      "image": "images/cakes/cake_06.jpg",
+      "title": "이니셜 레드로즈 2단 케이크",
+      "description": "그 사람의 이름을 가장 화려하게 불러주고 싶다면, 레드로즈와 이니셜 장식이 어우러진 2단 케이크가 답이 됩니다.",
+      "originalPrice": 128000, "discountRate": 20,
+      "hashtags": ["#이니셜케이크", "#로즈케이크", "#여자친구생일"],
+      "badges": ["BEST"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.9, "reviewCount": 154,
+      "reviews": [
+        { "user": "서**", "rating": 5, "content": "장미 장식이 생화처럼 섬세해서 놀랐어요.", "date": "2026-10-27" },
+        { "user": "신**", "rating": 5, "content": "맛까지 좋아서 남김없이 다 먹었습니다.", "date": "2026-10-05" }
+      ]
+    },
+    {
+      "id": 7, "type": "cake", "category": "anniversary",
+      "image": "images/cakes/cake_07.jpg",
+      "title": "핑크 플라워 피규어 2단 케이크",
+      "description": "함께한 시간을 사랑스럽게 기념하고 싶다면, 핑크 플라워 사이에 주인공 피규어를 올린 2단 케이크를 선물해보세요.",
+      "originalPrice": 119000, "discountRate": 15,
+      "hashtags": ["#기념일케이크", "#플라워케이크", "#피규어케이크"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.8, "reviewCount": 72,
+      "reviews": [
+        { "user": "권**", "rating": 5, "content": "색감이 화사해서 기념일 분위기가 확 살았어요.", "date": "2026-10-16" },
+        { "user": "황**", "rating": 4.5, "content": "피규어 표정까지 요청대로 만들어주셨어요.", "date": "2026-09-24" }
+      ]
+    },
+    {
+      "id": 8, "type": "cake", "category": "birthday",
+      "image": "images/cakes/cake_08.jpg",
+      "title": "네이비 골드 피규어 케이크",
+      "description": "차분하지만 품격 있는 생일을 준비하고 싶다면, 네이비와 골드 컬러가 주는 고급스러움을 선택해보세요.",
+      "originalPrice": 85000, "discountRate": 10,
+      "hashtags": ["#네이비케이크", "#피규어케이크", "#남자생일케이크"],
+      "badges": [],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.6, "reviewCount": 33,
+      "reviews": [
+        { "user": "송**", "rating": 4.5, "content": "남자 생일 케이크로 고민 없이 선택했어요.", "date": "2026-10-09" },
+        { "user": "안**", "rating": 5, "content": "골드 포인트가 은은하게 고급스러워요.", "date": "2026-09-21" }
+      ]
+    },
+    {
+      "id": 9, "type": "cake", "category": "celebration",
+      "image": "images/cakes/cake_09.jpg",
+      "title": "우승 기념 트리플크라운 케이크",
+      "description": "땀 흘려 이룬 성과를 함께 축하하고 싶다면, 트로피와 메달 장식으로 그 순간의 영광을 케이크에 새겨보세요.",
+      "originalPrice": 99000, "discountRate": 15,
+      "hashtags": ["#우승축하", "#스포츠케이크", "#팀회식"],
+      "badges": ["한정"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.8, "reviewCount": 29,
+      "reviews": [
+        { "user": "조**", "rating": 5, "content": "팀 우승 파티에서 선수들이 정말 좋아했어요.", "date": "2026-10-20" },
+        { "user": "배**", "rating": 4.5, "content": "디테일한 소품 표현이 인상적이었습니다.", "date": "2026-10-01" }
+      ]
+    },
+    {
+      "id": 10, "type": "cake", "category": "photo",
+      "image": "images/cakes/cake_10.jpg",
+      "title": "퍼플 플라워 포토 액자 케이크",
+      "description": "사진 한 장에 담긴 이야기를 꽃처럼 피워내고 싶다면, 퍼플 플라워로 감싼 포토 액자 케이크를 추천합니다.",
+      "originalPrice": 92000, "discountRate": 10,
+      "hashtags": ["#포토케이크", "#퍼플케이크", "#플라워케이크"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.7, "reviewCount": 51,
+      "reviews": [
+        { "user": "유**", "rating": 5, "content": "보라색 꽃 장식이 사진을 더 돋보이게 해줘요.", "date": "2026-10-13" },
+        { "user": "홍**", "rating": 4.5, "content": "액자는 케이크 먹고 나서도 보관하고 있어요.", "date": "2026-09-26" }
+      ]
+    },
+    {
+      "id": 11, "type": "cake", "category": "thanks",
+      "image": "images/cakes/cake_11.jpg",
+      "title": "스카이블루 수트 피규어 2단 케이크",
+      "description": "늘 든든하게 곁을 지켜준 분께 감사를 전하고 싶다면, 정장 차림 피규어로 그분의 멋진 모습을 담아보세요.",
+      "originalPrice": 115000, "discountRate": 15,
+      "hashtags": ["#아버지생신", "#감사케이크", "#2단케이크"],
+      "badges": ["BEST"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.9, "reviewCount": 98,
+      "reviews": [
+        { "user": "전**", "rating": 5, "content": "아버지 환갑 때 드렸는데 피규어를 계속 만지셨어요.", "date": "2026-10-23" },
+        { "user": "고**", "rating": 5, "content": "가족 모두가 만족한 케이크였습니다.", "date": "2026-10-03" }
+      ]
+    },
+    {
+      "id": 12, "type": "cake", "category": "photo",
+      "image": "images/cakes/cake_12.jpg",
+      "title": "하트 액자 래빗 케이크",
+      "description": "사랑스러운 순간을 귀엽게 축하하고 싶다면, 토끼 귀와 하트 액자가 어우러진 케이크로 미소를 선물해보세요.",
+      "originalPrice": 72000, "discountRate": 10,
+      "hashtags": ["#하트케이크", "#토끼케이크", "#포토케이크"],
+      "badges": ["NEW"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.8, "reviewCount": 41,
+      "reviews": [
+        { "user": "문**", "rating": 5, "content": "토끼 귀가 너무 귀여워서 사진을 수십 장 찍었어요.", "date": "2026-10-19" },
+        { "user": "양**", "rating": 4.5, "content": "크기가 적당해서 둘이 먹기 딱 좋았어요.", "date": "2026-10-04" }
+      ]
+    },
+    {
+      "id": 13, "type": "cake", "category": "fan",
+      "image": "images/cakes/cake_13.jpg",
+      "title": "포토카드 팬 케이크",
+      "description": "모아둔 포토카드로 특별한 하루를 꾸미고 싶다면, 최애의 사진을 케이크 위에 나란히 올려 팬심을 완성해보세요.",
+      "originalPrice": 79000, "discountRate": 10,
+      "hashtags": ["#포토카드", "#생일카페", "#최애케이크"],
+      "badges": ["NEW", "커스텀"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.7, "reviewCount": 36,
+      "reviews": [
+        { "user": "손**", "rating": 5, "content": "포토카드 배치를 제가 원하는 대로 해주셨어요.", "date": "2026-10-22" },
+        { "user": "노**", "rating": 4.5, "content": "친구들과 생일카페 열 때 주인공이었어요.", "date": "2026-10-07" }
+      ]
+    },
+    {
+      "id": 14, "type": "cake", "category": "photo",
+      "image": "images/cakes/cake_14.jpg",
+      "title": "블랙 필름 포토 3단 케이크",
+      "description": "함께 쌓아온 추억을 한 편의 영화처럼 보여주고 싶다면, 필름처럼 이어지는 사진으로 3단 케이크를 채워보세요.",
+      "originalPrice": 150000, "discountRate": 25,
+      "hashtags": ["#3단케이크", "#필름케이크", "#프러포즈"],
+      "badges": ["BEST", "한정"],
+      "customizable": true, "leadTime": "최소 10일 전 예약",
+      "rating": 4.9, "reviewCount": 67,
+      "reviews": [
+        { "user": "백**", "rating": 5, "content": "프러포즈용으로 주문했는데 분위기가 완벽했어요.", "date": "2026-10-26" },
+        { "user": "허**", "rating": 5, "content": "사진 하나하나 선명하게 잘 나왔습니다.", "date": "2026-10-10" }
+      ]
+    },
+    {
+      "id": 15, "type": "cake", "category": "celebration",
+      "image": "images/cakes/cake_15.jpg",
+      "title": "캐슬 실루엣 피규어 케이크",
+      "description": "새로운 출발을 앞둔 사람을 응원하고 싶다면, 학교를 닮은 캐슬 실루엣과 피규어로 졸업과 입학을 축하해보세요.",
+      "originalPrice": 95000, "discountRate": 15,
+      "hashtags": ["#졸업케이크", "#입학축하", "#피규어케이크"],
+      "badges": ["시즌"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.7, "reviewCount": 39,
+      "reviews": [
+        { "user": "남**", "rating": 5, "content": "졸업식 날 학사모 피규어가 정말 의미 있었어요.", "date": "2026-10-15" },
+        { "user": "심**", "rating": 4.5, "content": "실루엣 장식이 섬세하고 단단했어요.", "date": "2026-09-29" }
+      ]
+    },
+    {
+      "id": 16, "type": "cake", "category": "thanks",
+      "image": "images/cakes/cake_16.jpg",
+      "title": "복숭아 캐릭터 축하 케이크",
+      "description": "부모님께 오래오래 건강하시라는 마음을 전하고 싶다면, 장수를 뜻하는 복숭아 장식에 감사의 문구를 더해보세요.",
+      "originalPrice": 65000, "discountRate": 5,
+      "hashtags": ["#부모님선물", "#복숭아케이크", "#감사케이크"],
+      "badges": [],
+      "customizable": true, "leadTime": "최소 3일 전 예약",
+      "rating": 4.8, "reviewCount": 44,
+      "reviews": [
+        { "user": "곽**", "rating": 5, "content": "어머니께서 복숭아 의미를 듣고 감동하셨어요.", "date": "2026-10-17" },
+        { "user": "성**", "rating": 4.5, "content": "달지 않아서 어른들이 좋아하셨습니다.", "date": "2026-09-28" }
+      ]
+    },
+    {
+      "id": 17, "type": "cake", "category": "birthday",
+      "image": "images/cakes/cake_17.jpg",
+      "title": "이름 풍선 피규어 케이크",
+      "description": "주인공의 이름을 크게 불러주고 싶다면, 풍선처럼 떠오르는 이름 장식과 피규어로 생일의 설렘을 더해보세요.",
+      "originalPrice": 82000, "discountRate": 10,
+      "hashtags": ["#이름케이크", "#풍선케이크", "#생일케이크"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.7, "reviewCount": 48,
+      "reviews": [
+        { "user": "차**", "rating": 5, "content": "이름 장식이 커서 멀리서도 눈에 띄었어요.", "date": "2026-10-12" },
+        { "user": "주**", "rating": 4.5, "content": "피규어 옷 색까지 맞춰주셔서 감사했어요.", "date": "2026-09-23" }
+      ]
+    },
+    {
+      "id": 18, "type": "cake", "category": "anniversary",
+      "image": "images/cakes/cake_18.jpg",
+      "title": "레드하트 넘버 피규어 케이크",
+      "description": "둘만의 기념일 숫자를 의미 있게 남기고 싶다면, 레드하트와 넘버 장식으로 사랑의 시간을 축하해보세요.",
+      "originalPrice": 78000, "discountRate": 10,
+      "hashtags": ["#커플케이크", "#기념일케이크", "#하트케이크"],
+      "badges": [],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.8, "reviewCount": 55,
+      "reviews": [
+        { "user": "우**", "rating": 5, "content": "1000일 기념으로 주문했는데 너무 만족해요.", "date": "2026-10-24" },
+        { "user": "민**", "rating": 4.5, "content": "하트 장식이 촌스럽지 않고 세련됐어요.", "date": "2026-10-06" }
+      ]
+    },
+    {
+      "id": 19, "type": "cake", "category": "anniversary",
+      "image": "images/cakes/cake_19.jpg",
+      "title": "드레스 피규어 3단 케이크",
+      "description": "인생에서 가장 아름다운 날을 기념하고 싶다면, 드레스를 입은 주인공 피규어가 올라간 3단 케이크로 그 순간을 완성해보세요.",
+      "originalPrice": 148000, "discountRate": 20,
+      "hashtags": ["#웨딩케이크", "#3단케이크", "#브라이덜샤워"],
+      "badges": ["BEST", "한정"],
+      "customizable": true, "leadTime": "최소 10일 전 예약",
+      "rating": 4.9, "reviewCount": 76,
+      "reviews": [
+        { "user": "류**", "rating": 5, "content": "브라이덜샤워의 하이라이트였어요.", "date": "2026-10-28" },
+        { "user": "변**", "rating": 5, "content": "드레스 디테일이 실제 드레스랑 비슷했어요.", "date": "2026-10-09" }
+      ]
+    },
+    {
+      "id": 20, "type": "cake", "category": "photo",
+      "image": "images/cakes/cake_20.jpg",
+      "title": "레드하트 포토 액자 케이크",
+      "description": "가장 좋아하는 사진에 사랑을 가득 담고 싶다면, 레드하트로 둘러싼 포토 액자 케이크가 마음을 대신 전해줍니다.",
+      "originalPrice": 76000, "discountRate": 10,
+      "hashtags": ["#포토케이크", "#하트케이크", "#연인선물"],
+      "badges": [],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.6, "reviewCount": 31,
+      "reviews": [
+        { "user": "엄**", "rating": 4.5, "content": "사진 색감이 그대로 잘 나왔어요.", "date": "2026-10-13" },
+        { "user": "원**", "rating": 5, "content": "하트 장식 덕분에 분위기가 확 살았어요.", "date": "2026-09-25" }
+      ]
+    },
+    {
+      "id": 21, "type": "cake", "category": "thanks",
+      "image": "images/cakes/cake_21.jpg",
+      "title": "넘버 90 피규어 케이크",
+      "description": "가족의 어른을 위한 뜻깊은 생신을 준비하고 싶다면, 함께해온 세월에 대한 존경을 피규어와 숫자로 담아보세요.",
+      "originalPrice": 99000, "discountRate": 15,
+      "hashtags": ["#구순잔치", "#생신케이크", "#부모님선물"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.9, "reviewCount": 42,
+      "reviews": [
+        { "user": "천**", "rating": 5, "content": "할머니 구순 잔치에서 온 가족이 감동했어요.", "date": "2026-10-20" },
+        { "user": "방**", "rating": 5, "content": "어르신 입맛에 맞게 덜 달게 해주셨어요.", "date": "2026-10-02" }
+      ]
+    },
+    {
+      "id": 22, "type": "cake", "category": "anniversary",
+      "image": "images/cakes/cake_22.jpg",
+      "title": "15주년 기념 스타 케이크",
+      "description": "오랜 시간 함께 걸어온 길을 축하하고 싶다면, 별처럼 반짝이는 장식으로 주년의 의미를 빛내보세요.",
+      "originalPrice": 88000, "discountRate": 10,
+      "hashtags": ["#주년케이크", "#결혼기념일", "#창립기념"],
+      "badges": [],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.7, "reviewCount": 27,
+      "reviews": [
+        { "user": "공**", "rating": 5, "content": "회사 창립기념일 행사에 잘 어울렸어요.", "date": "2026-10-16" },
+        { "user": "현**", "rating": 4.5, "content": "별 장식이 입체적이라 사진이 잘 나와요.", "date": "2026-09-30" }
+      ]
+    },
+    {
+      "id": 23, "type": "cake", "category": "birthday",
+      "image": "images/cakes/cake_23.jpg",
+      "title": "옐로 리본 이니셜 케이크",
+      "description": "밝고 경쾌한 생일을 선물하고 싶다면, 옐로 리본으로 감싼 이니셜 케이크가 선물 상자처럼 기분 좋게 다가갑니다.",
+      "originalPrice": 74000, "discountRate": 10,
+      "hashtags": ["#리본케이크", "#이니셜케이크", "#친구생일"],
+      "badges": ["NEW"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.7, "reviewCount": 22,
+      "reviews": [
+        { "user": "탁**", "rating": 5, "content": "리본 장식이 진짜 선물 포장 같아요.", "date": "2026-10-21" },
+        { "user": "마**", "rating": 4.5, "content": "노란색이 밝아서 기분까지 좋아졌어요.", "date": "2026-10-05" }
+      ]
+    },
+    {
+      "id": 24, "type": "cake", "category": "birthday",
+      "image": "images/cakes/cake_24.jpg",
+      "title": "남극 펭귄 캐릭터 케이크",
+      "description": "펭귄을 좋아하는 아이에게 잊지 못할 생일을 만들어주고 싶다면, 남극에서 온 펭귄 친구가 파티의 주인공이 되어줍니다.",
+      "originalPrice": 68000, "discountRate": 5,
+      "hashtags": ["#키즈생일", "#펭귄케이크", "#캐릭터케이크"],
+      "badges": [],
+      "customizable": true, "leadTime": "최소 3일 전 예약",
+      "rating": 4.8, "reviewCount": 39,
+      "reviews": [
+        { "user": "길**", "rating": 5, "content": "아들이 펭귄을 먹기 아까워서 한참 안 잘랐어요.", "date": "2026-10-18" },
+        { "user": "표**", "rating": 4.5, "content": "어린이집 생일파티에서 인기 최고였어요.", "date": "2026-09-22" }
+      ]
+    },
+    {
+      "id": 25, "type": "cake", "category": "thanks",
+      "image": "images/cakes/cake_25.jpg",
+      "title": "화이트 수트 피규어 케이크",
+      "description": "존경하는 분께 깔끔하게 감사를 표현하고 싶다면, 화이트 톤에 수트 피규어를 올린 케이크로 품격을 더해보세요.",
+      "originalPrice": 84000, "discountRate": 10,
+      "hashtags": ["#스승의날", "#감사케이크", "#피규어케이크"],
+      "badges": [],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.6, "reviewCount": 25,
+      "reviews": [
+        { "user": "제**", "rating": 4.5, "content": "선생님 퇴임식에 드렸는데 반응이 좋았어요.", "date": "2026-10-11" },
+        { "user": "추**", "rating": 5, "content": "화이트 톤이라 어디에 두어도 잘 어울려요.", "date": "2026-09-20" }
+      ]
+    },
+    {
+      "id": 26, "type": "cake", "category": "anniversary",
+      "image": "images/cakes/cake_26.jpg",
+      "title": "레드로즈 가든 피규어 케이크",
+      "description": "장미꽃밭 같은 로맨틱한 기념일을 만들고 싶다면, 붉은 장미 사이에 피규어를 올린 가든 케이크를 선택해보세요.",
+      "originalPrice": 105000, "discountRate": 15,
+      "hashtags": ["#로즈케이크", "#기념일케이크", "#프러포즈"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 7일 전 예약",
+      "rating": 4.8, "reviewCount": 47,
+      "reviews": [
+        { "user": "인**", "rating": 5, "content": "장미가 풍성해서 꽃다발 대신 충분했어요.", "date": "2026-10-25" },
+        { "user": "여**", "rating": 4.5, "content": "피규어 포즈를 원하는 대로 요청할 수 있어 좋아요.", "date": "2026-10-08" }
+      ]
+    },
+    {
+      "id": 27, "type": "cake", "category": "celebration",
+      "image": "images/cakes/cake_27.jpg",
+      "title": "블루 캐슬 2단 케이크",
+      "description": "새 출발을 웅장하게 축하하고 싶다면, 성처럼 우뚝 선 블루 캐슬 2단 케이크로 앞날을 응원해보세요.",
+      "originalPrice": 125000, "discountRate": 20,
+      "hashtags": ["#졸업케이크", "#캐슬케이크", "#2단케이크"],
+      "badges": ["한정"],
+      "customizable": false, "leadTime": "최소 7일 전 예약",
+      "rating": 4.8, "reviewCount": 34,
+      "reviews": [
+        { "user": "명**", "rating": 5, "content": "건물 디테일이 정교해서 다들 놀랐어요.", "date": "2026-10-19" },
+        { "user": "태**", "rating": 4.5, "content": "크기가 커서 단체 행사에 딱 맞았어요.", "date": "2026-10-03" }
+      ]
+    },
+    {
+      "id": 28, "type": "cake", "category": "anniversary",
+      "image": "images/cakes/cake_28.jpg",
+      "title": "넘버 1126 기념일 케이크",
+      "description": "잊고 싶지 않은 날짜를 오래 기억하고 싶다면, 그날의 숫자를 크게 새긴 기념일 케이크로 의미를 더해보세요.",
+      "originalPrice": 86000, "discountRate": 10,
+      "hashtags": ["#날짜케이크", "#기념일케이크", "#커스텀케이크"],
+      "badges": ["커스텀"],
+      "customizable": true, "leadTime": "최소 5일 전 예약",
+      "rating": 4.7, "reviewCount": 30,
+      "reviews": [
+        { "user": "하**", "rating": 5, "content": "결혼기념일 날짜로 주문했는데 의미 있었어요.", "date": "2026-10-27" },
+        { "user": "육**", "rating": 4.5, "content": "숫자 장식이 튼튼해서 배송 중에도 멀쩡했어요.", "date": "2026-10-10" }
+      ]
+    },
+    {
+      "id": 29, "type": "topper", "category": "topper",
+      "image": "images/toppers/topper_01.jpg",
+      "title": "무드등 미니어처 피규어 (여성)",
+      "description": "케이크를 먹은 뒤에도 그날을 오래 간직하고 싶다면, 무드등이 되는 미니어처 피규어로 추억을 곁에 두세요.",
+      "originalPrice": 45000, "discountRate": 10,
+      "hashtags": ["#미니어처피규어", "#무드등", "#기념선물"],
+      "badges": ["해외배송"],
+      "customizable": true, "leadTime": "제작 7~10일 소요",
+      "rating": 4.8, "reviewCount": 62,
+      "reviews": [
+        { "user": "강**", "rating": 5, "content": "책상 위에 두고 매일 켜고 있어요.", "date": "2026-10-22" },
+        { "user": "구**", "rating": 4.5, "content": "사진만 보냈는데 특징을 잘 살려주셨어요.", "date": "2026-10-06" }
+      ]
+    },
+    {
+      "id": 30, "type": "topper", "category": "topper",
+      "image": "images/toppers/topper_02.jpg",
+      "title": "무드등 미니어처 피규어 (남성)",
+      "description": "멀리 있는 소중한 사람에게 마음을 전하고 싶다면, 해외배송도 가능한 미니어처 피규어 무드등을 선물해보세요.",
+      "originalPrice": 45000, "discountRate": 10,
+      "hashtags": ["#미니어처피규어", "#무드등", "#해외선물"],
+      "badges": ["해외배송"],
+      "customizable": true, "leadTime": "제작 7~10일 소요",
+      "rating": 4.7, "reviewCount": 38,
+      "reviews": [
+        { "user": "노**", "rating": 5, "content": "유학 중인 동생에게 보냈는데 잘 도착했어요.", "date": "2026-10-14" },
+        { "user": "도**", "rating": 4.5, "content": "조명 밝기가 은은해서 수면등으로 써요.", "date": "2026-09-27" }
+      ]
+    },
+    {
+      "id": 31, "type": "topper", "category": "topper",
+      "image": "images/toppers/topper_03.jpg",
+      "title": "무드등 미니어처 피규어 (하트)",
+      "description": "사랑하는 마음을 오래 빛나게 하고 싶다면, 하트를 든 미니어처 피규어 무드등으로 매일 밤 그 마음을 밝혀보세요.",
+      "originalPrice": 49000, "discountRate": 15,
+      "hashtags": ["#커플선물", "#미니어처피규어", "#무드등"],
+      "badges": ["BEST", "해외배송"],
+      "customizable": true, "leadTime": "제작 7~10일 소요",
+      "rating": 4.9, "reviewCount": 81,
+      "reviews": [
+        { "user": "라**", "rating": 5, "content": "기념일 케이크 위에 올렸다가 지금은 무드등으로 써요.", "date": "2026-10-26" },
+        { "user": "지**", "rating": 5, "content": "하트 포즈가 너무 사랑스러워요.", "date": "2026-10-12" }
+      ]
+    }
+  ]
+}

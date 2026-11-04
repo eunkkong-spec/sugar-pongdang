@@ -1,0 +1,38 @@
+.instagram .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.instagram h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-section);
+  font-weight: normal;
+}
+
+.instagram .follow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border: 1px solid var(--choco);
+  border-radius: var(--radius-badge);
+  font-size: var(--fs-small);
+}
+
+.instagram .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 4px;
+  background: var(--white);
+}
+
+.instagram img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}

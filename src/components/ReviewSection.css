@@ -1,0 +1,117 @@
+.review-section .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-section .more {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  font-size: var(--fs-small);
+  color: var(--gray);
+}
+
+.review-section .list {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.review-section .list::-webkit-scrollbar {
+  display: none;
+}
+
+.review-section .list li {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+}
+
+.review-section .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--white);
+}
+
+/* 포토후기 사진 */
+.review-section .photo {
+  position: relative;
+}
+
+.review-section .photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.review-section .photo-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 8px;
+  border-radius: var(--radius-badge);
+  background: var(--choco);
+  color: var(--white);
+  font-size: var(--fs-badge);
+  font-weight: 700;
+}
+
+.review-section .body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.review-section .stars {
+  margin-bottom: 8px;
+  font-size: var(--fs-name);
+  color: var(--peach-500);
+}
+
+.review-section .stars .empty {
+  color: var(--line);
+}
+
+/* 숨김 처리: 2줄까지만 보이고 나머지는 … */
+.review-section .content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px;
+  font-size: var(--fs-desc);
+  line-height: 1.6;
+  color: var(--choco);
+}
+
+.review-section .product {
+  margin-top: auto;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--peach-700);
+}
+
+.review-section .meta {
+  margin-top: 4px;
+  font-size: var(--fs-badge);
+  color: var(--gray);
+}
+
+.review-section .arrows {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.review-section .arrows button {
+  width: 28px;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--choco);
+}

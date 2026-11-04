@@ -1,0 +1,63 @@
+.contact-box {
+  margin-top: 60px;
+  background: var(--white);
+}
+
+.contact-box .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 20px;
+}
+
+.contact-box .item + .item {
+  border-top: 1px solid var(--line);
+}
+
+.contact-box h2 {
+  font-size: var(--fs-section);
+  font-weight: normal;
+}
+
+.contact-box p {
+  margin-top: 8px;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.contact-box .action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* 카카오톡 정식 심볼: 노란 둥근 네모 + 갈색 심볼 */
+.contact-box .kakao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-card);
+  background: var(--kakao);
+  color: var(--kakao-brown);
+}
+
+/* Font Awesome 전화 아이콘 (Font Awesome은 글자 크기로 아이콘 크기를 정함) */
+.contact-box .phone {
+  font-size: 36px;
+  color: var(--choco);
+}
+
+.contact-box .action a {
+  padding: 8px 16px;
+  border-radius: var(--radius-badge);
+  background: var(--choco);
+  color: var(--white);
+  font-size: var(--fs-small);
+  font-weight: 700;
+}

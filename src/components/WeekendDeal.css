@@ -1,0 +1,59 @@
+.weekend-deal .section-title {
+  justify-content: center;
+  margin-bottom: 4px;
+  font-size: var(--fs-hero);
+}
+
+.weekend-deal .tag {
+  padding: 4px 8px;
+  border-radius: var(--radius-badge);
+  background: var(--sale);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: var(--fs-badge);
+  font-weight: 700;
+  transform: rotate(-15deg);
+}
+
+.weekend-deal .sub-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: var(--fs-name);
+  color: var(--gray);
+}
+
+.weekend-deal .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* 카운트다운 띠 위로 장바구니 버튼 올리기 */
+.weekend-deal .product-card .cart {
+  bottom: 48px;
+}
+
+.weekend-deal .countdown {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+  padding: 8px 0;
+  background: var(--peach-500);
+  color: var(--white);
+}
+
+.weekend-deal .countdown strong {
+  font-size: var(--fs-price);
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+.weekend-deal .countdown span {
+  font-size: var(--fs-badge);
+}

@@ -1,0 +1,57 @@
+.celeb-gallery .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.celeb-gallery .arrows {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.celeb-gallery .arrows button {
+  width: 28px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.celeb-gallery .arrows button:first-child {
+  color: var(--peach-300);
+}
+
+.celeb-gallery .list {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.celeb-gallery .list::-webkit-scrollbar {
+  display: none;
+}
+
+.celeb-gallery .list li {
+  flex: 0 0 60%;
+  scroll-snap-align: start;
+}
+
+.celeb-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 8px;
+  border-radius: var(--radius-card);
+  background: var(--white);
+  object-fit: cover;
+}
+
+.celeb-gallery strong {
+  display: block;
+  font-size: var(--fs-name);
+  color: var(--choco);
+}
+
+.celeb-gallery p {
+  font-size: var(--fs-small);
+  color: var(--gray);
+}

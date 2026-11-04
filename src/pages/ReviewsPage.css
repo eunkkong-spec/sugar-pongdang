@@ -1,0 +1,237 @@
+.reviews-page {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.reviews-page .page-title {
+  margin-bottom: 8px;
+  font-size: var(--fs-section);
+  font-weight: normal;
+}
+
+.reviews-page .all-link {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--peach-700);
+}
+
+.reviews-page .stars {
+  color: var(--peach-500);
+}
+
+.reviews-page .stars .off {
+  color: var(--line);
+}
+
+/* 요약 */
+.reviews-page .summary {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 16px;
+  align-items: center;
+  margin: 8px 0 16px;
+  padding: 20px 16px;
+  border-radius: var(--radius-card);
+  background: var(--white);
+}
+
+.reviews-page .score {
+  text-align: center;
+}
+
+.reviews-page .score strong {
+  display: block;
+  font-family: var(--font-title);
+  font-size: var(--fs-hero);
+  font-weight: normal;
+}
+
+.reviews-page .score p {
+  font-size: var(--fs-small);
+  color: var(--gray);
+}
+
+.reviews-page .bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(--fs-badge);
+  color: var(--gray);
+}
+
+.reviews-page .bars li {
+  display: grid;
+  grid-template-columns: 28px 1fr 32px;
+  gap: 8px;
+  align-items: center;
+}
+
+.reviews-page .bars li span:last-child {
+  text-align: right;
+}
+
+.reviews-page .bar {
+  height: 8px;
+  overflow: hidden;
+  border-radius: var(--radius-badge);
+  background: var(--line);
+}
+
+.reviews-page .bar span {
+  display: block;
+  height: 100%;
+  background: var(--peach-500);
+}
+
+/* 포토후기 모아보기 */
+.reviews-page .photo-strip {
+  margin-bottom: 16px;
+}
+
+.reviews-page .photo-strip p {
+  margin-bottom: 8px;
+  font-size: var(--fs-desc);
+  font-weight: 700;
+}
+
+.reviews-page .photo-strip ul {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.reviews-page .photo-strip ul::-webkit-scrollbar {
+  display: none;
+}
+
+.reviews-page .photo-strip img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+}
+
+/* 탭 + 정렬 */
+.reviews-page .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.reviews-page .tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.reviews-page .tabs button {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-badge);
+  background: var(--white);
+  font-size: var(--fs-small);
+}
+
+.reviews-page .tabs [aria-selected='true'] {
+  border-color: var(--peach-500);
+  background: var(--peach-500);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.reviews-page select {
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-badge);
+  background: var(--white);
+  color: var(--choco);
+  font: inherit;
+  font-size: var(--fs-small);
+}
+
+/* 후기 목록 */
+.reviews-page .list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviews-page .review-item {
+  padding: 16px;
+  border-radius: var(--radius-card);
+  background: var(--white);
+}
+
+.reviews-page .review-item .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.reviews-page .meta {
+  font-size: var(--fs-badge);
+  color: var(--gray);
+}
+
+.reviews-page .product {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--peach-700);
+}
+
+.reviews-page .body {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.reviews-page .content {
+  flex: 1;
+  font-size: var(--fs-desc);
+  line-height: 1.6;
+}
+
+.reviews-page .content.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.reviews-page .body img {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+}
+
+.reviews-page .toggle {
+  margin-top: 4px;
+  font-size: var(--fs-small);
+  color: var(--gray);
+  text-decoration: underline;
+}
+
+.reviews-page .empty {
+  padding: 60px 0;
+  text-align: center;
+  color: var(--gray);
+}
+
+.reviews-page .more {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-badge);
+  background: var(--white);
+  font-size: var(--fs-desc);
+}

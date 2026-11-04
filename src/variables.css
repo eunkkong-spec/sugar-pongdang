@@ -1,0 +1,81 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* 제목 글꼴 (--font-title) 불러오기 */
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --peach-50: #FFF5F1;
+  --peach-100: #FFE4DA;
+  --peach-300: #F9B9A3;
+  --peach-500: #F2937A;
+  --peach-700: #B54E38;
+
+  --pistachio-100: #EAF3E3;
+  --pistachio-300: #BFD8AE;
+  --pistachio-500: #93B87F;
+  --pistachio-700: #4F7542;
+
+  --choco: #4A3830;
+  --gray: #7A6F6A;
+  --line: #EDE4E0;
+  --sale: #C9372F;
+  --white: #FFFFFF;
+
+  /* 카카오 브랜드 색 */
+  --kakao: #FEE500;
+  --kakao-brown: #3A1D1D;
+
+  /* 인스타그램 브랜드 그라데이션 */
+  --insta-purple: #833AB4;
+  --insta-pink: #E1306C;
+  --insta-orange: #F77737;
+
+  /* 반투명 (딤 배경, 그림자) */
+  --dim: rgba(74, 56, 48, 0.4);
+
+  --font-body: "Pretendard", -apple-system, sans-serif;
+  --font-title: "Cafe24Ssurround", "Pretendard", sans-serif;
+
+  --fs-hero: 40px;
+  --fs-section: 28px;
+  --fs-name: 16px;
+  --fs-desc: 14px;
+  --fs-price: 18px;
+  --fs-small: 13px;
+  --fs-badge: 12px;
+
+  --radius-card: 16px;
+  --radius-badge: 999px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-hero: 28px;
+    --fs-section: 22px;
+    --fs-name: 15px;
+    --fs-desc: 13px;
+    --fs-price: 16px;
+    --fs-small: 12px;
+    --fs-badge: 11px;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--choco);
+  background: var(--white);
+}
+
+h1, h2 {
+  font-family: var(--font-title);
+}
+
+.price {
+  font-variant-numeric: tabular-nums;
+}

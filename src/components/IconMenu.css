@@ -1,0 +1,73 @@
+/* 분홍 아이콘이 잘 보이도록 화면 끝까지 흰 띠 */
+.icon-menu {
+  margin-top: 24px;
+  padding: 24px 16px;
+  background: var(--white);
+}
+
+.icon-menu ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 20px;
+}
+
+.icon-menu ul:last-child {
+  margin-bottom: 0;
+}
+
+.icon-menu button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  font-size: var(--fs-small);
+}
+
+.icon-menu .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-card);
+  font-size: var(--fs-price);
+  font-weight: 900;
+}
+
+.icon-menu .all {
+  background: var(--choco);
+  color: var(--peach-300);
+  font-size: var(--fs-section);
+}
+
+.icon-menu .event {
+  background: var(--pistachio-300);
+  font-size: 28px;
+}
+
+.icon-menu .time {
+  background: var(--choco);
+  color: var(--white);
+}
+
+.icon-menu .new {
+  background: var(--peach-500);
+  color: var(--white);
+}
+
+.icon-menu .hot {
+  background: var(--choco);
+  color: var(--peach-500);
+}
+
+.icon-menu .category-list {
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 16px;
+}
+
+.icon-menu .category {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-card);
+}

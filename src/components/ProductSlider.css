@@ -1,0 +1,32 @@
+.product-slider .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-slider .arrows button {
+  width: 28px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.product-slider .arrows button:first-child {
+  color: var(--peach-300);
+}
+
+.product-slider .list {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.product-slider .list::-webkit-scrollbar {
+  display: none;
+}
+
+.product-slider .list li {
+  flex: 0 0 41%;
+  scroll-snap-align: start;
+}

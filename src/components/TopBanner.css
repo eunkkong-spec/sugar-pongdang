@@ -1,0 +1,46 @@
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  padding-left: 16px;
+  background: var(--kakao);
+  color: var(--kakao-brown);
+  font-size: var(--fs-name);
+  font-weight: 700;
+}
+
+.top-banner a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.top-banner strong {
+  color: var(--sale);
+}
+
+.top-banner .actions {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+}
+
+.top-banner .today {
+  padding: 0 8px;
+  font-size: var(--fs-badge);
+  font-weight: 400;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.top-banner .close {
+  align-self: flex-start;
+  width: 36px;
+  height: 32px;
+  border-bottom-left-radius: var(--radius-card);
+  background: var(--kakao-brown);
+  color: var(--white);
+  font-size: 13px;
+}

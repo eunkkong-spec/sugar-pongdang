@@ -1,0 +1,28 @@
+/* 찜 서랍: 장바구니 서랍(CartDrawer.css)과 다른 부분만 */
+.wish-drawer .name {
+  display: block;
+}
+
+.wish-drawer .hint {
+  font-size: var(--fs-small);
+}
+
+.wish-drawer .btn-to-cart {
+  padding: 4px 12px;
+  border: 1px solid var(--peach-500);
+  border-radius: var(--radius-badge);
+  font-size: var(--fs-small);
+  color: var(--peach-700);
+}
+
+.wish-drawer .btn-to-cart.done {
+  border-color: var(--line);
+  color: var(--gray);
+  cursor: default;
+}
+
+/* 찜 해제: 채워진 빨간 하트 */
+.wish-drawer .remove {
+  font-size: 20px;
+  color: var(--sale);
+}

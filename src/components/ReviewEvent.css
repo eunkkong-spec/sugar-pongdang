@@ -1,0 +1,53 @@
+.review-event {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  padding: 20px 12px 20px 24px;
+  background: var(--peach-500);
+  color: var(--white);
+}
+
+.review-event h2 {
+  font-size: var(--fs-section);
+  font-weight: normal;
+  line-height: 1.25;
+  color: var(--choco);
+}
+
+.review-event h2 strong {
+  display: block;
+  font-size: var(--fs-hero);
+  font-weight: normal;
+  color: var(--white);
+}
+
+.review-event p {
+  margin-top: 12px;
+  padding-right: 56px;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+
+.review-event img {
+  width: 130px;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+}
+
+.review-event .camera {
+  position: absolute;
+  right: 116px;
+  bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--white);
+  font-size: 28px;
+}

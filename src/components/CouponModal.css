@@ -1,0 +1,103 @@
+.coupon-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.coupon-modal .dim {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: var(--dim);
+}
+
+.coupon-modal .box {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: var(--radius-card);
+  background: var(--white);
+}
+
+.coupon-modal .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.coupon-modal h2 {
+  font-size: var(--fs-section);
+  font-weight: normal;
+}
+
+.coupon-modal .close {
+  width: 28px;
+  font-size: 20px;
+  color: var(--gray);
+}
+
+/* 쿠폰 이미지 (받은 뒤에는 흐리게 + 도장) */
+.coupon-modal .coupon-image {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.coupon-modal .coupon-image img {
+  width: 100%;
+}
+
+.coupon-modal .coupon-image.issued img {
+  opacity: 0.4;
+}
+
+.coupon-modal .stamp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 8px 16px;
+  border: 3px solid var(--pistachio-700);
+  border-radius: var(--radius-card);
+  background: var(--white);
+  color: var(--pistachio-700);
+  font-family: var(--font-title);
+  font-size: var(--fs-section);
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(-12deg);
+}
+
+.coupon-modal .terms {
+  margin-bottom: 16px;
+  font-size: var(--fs-small);
+  text-align: center;
+  color: var(--gray);
+}
+
+.coupon-modal .done {
+  margin-bottom: 12px;
+  font-size: var(--fs-desc);
+  font-weight: 700;
+  text-align: center;
+  color: var(--pistachio-700);
+}
+
+.coupon-modal .btn-get {
+  width: 100%;
+  height: 48px;
+  border-radius: var(--radius-badge);
+  background: var(--peach-500);
+  color: var(--white);
+  font-size: var(--fs-name);
+  font-weight: 700;
+}
+
+.coupon-modal .btn-get:disabled {
+  background: var(--line);
+  color: var(--gray);
+  cursor: default;
+}

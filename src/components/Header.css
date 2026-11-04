@@ -1,0 +1,56 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--white);
+}
+
+/* 스크롤 시 구분선 (그림자로 그려서 헤더 높이는 그대로) */
+.header.scrolled {
+  box-shadow: 0 1px 0 var(--line);
+}
+
+/* 왼쪽 · 로고 · 오른쪽 3칸: 아이콘 개수와 상관없이 로고는 항상 가운데 */
+.header .bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 60px;
+  padding: 0 16px;
+}
+
+.header .left {
+  display: flex;
+}
+
+.header .logo img {
+  height: 36px;
+}
+
+/* 오른쪽 아이콘 4개: 좁은 화면에서도 로고가 가운데에 있도록 간격 4px */
+.header .util {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+/* 개수 배지가 붙는 버튼 (찜·장바구니) */
+.header .badge-btn {
+  position: relative;
+}
+
+.header .count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: var(--radius-badge);
+  background: var(--sale);
+  color: var(--white);
+  font-size: var(--fs-badge);
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}

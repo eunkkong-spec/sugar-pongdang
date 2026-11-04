@@ -1,0 +1,74 @@
+/* body·h1·h2 기본 글꼴과 색은 variables.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.wrap {
+  max-width: 480px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: var(--peach-100);
+}
+
+.section {
+  padding: 40px 16px 0;
+}
+
+/* 스크롤 이동 시 고정 헤더(바 60 + 탭 44)에 가려지지 않게 */
+section[id] {
+  scroll-margin-top: 108px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: var(--fs-section);
+  font-weight: normal;
+  color: var(--choco);
+}
+
+.section-title em {
+  font-style: normal;
+  color: var(--peach-500);
+}
+
+/* 없는 주소 안내 */
+.not-found {
+  min-height: 50vh;
+}
+
+.not-found p {
+  margin-bottom: 16px;
+  color: var(--gray);
+}
+
+.not-found a {
+  font-weight: 700;
+  color: var(--peach-700);
+}
