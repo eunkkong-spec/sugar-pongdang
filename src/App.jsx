@@ -15,6 +15,8 @@ import OrderPage from './pages/OrderPage.jsx'
 import ReviewsPage from './pages/ReviewsPage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import JoinPage from './pages/JoinPage.jsx'
+import CheckoutPage from './pages/CheckoutPage.jsx'
+import PaymentResultPage from './pages/PaymentResultPage.jsx'
 import { useShop } from './context/useShop.js'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import StyleGuide from './pages/StyleGuide.jsx'
@@ -132,6 +134,9 @@ function ShopLayout() {
           <Route path="/reviews" element={<ReviewsPage key={location.search} />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/join" element={<JoinPage />} />
+          <Route path="/checkout" element={<CheckoutPage key={location.key} />} />
+          <Route path="/payment/success" element={<PaymentResultPage type="success" />} />
+          <Route path="/payment/fail" element={<PaymentResultPage type="fail" />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

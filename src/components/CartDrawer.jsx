@@ -1,28 +1,23 @@
+import { useNavigate } from 'react-router-dom'
 import { useShop } from '../context/useShop.js'
 import { useDrawer } from '../hooks/useDrawer.js'
 import { getUnitPrice, formatWon } from '../utils/price.js'
-import { formatOptions } from '../utils/cart.js'
+import { formatOptions, getOrderSummary } from '../utils/cart.js'
 import { welcomeCoupon } from '../data/coupons.js'
-import data from '../data/products.json'
 import './CartDrawer.css'
-
-const { fee, freeOver } = data.common.cake.delivery
 
 function CartDrawer({ isOpen, onClose }) {
   const { cart, changeQty, removeFromCart, getCoupon } = useShop()
-  const coupon = getCoupon(welcomeCoupon.id)
+  const navigate = useNavigate()
   useDrawer(isOpen, onClose)
 
-  // 장바구니 id로 상품 정보 찾기 (없어진 상품은 제외)
-  const items = cart
-    .map((item) => ({ ...item, product: data.products.find((p) => p.id === item.id) }))
-    .filter((item) => item.product)
+  const { items, total, delivery, discount, pay, remain } = getOrderSummary(cart, getCoupon(welcomeCoupon.id))
 
-  const total = items.reduce((sum, item) => sum + getUnitPrice(item.product, item.size) * item.qty, 0)
-  const delivery = total === 0 || total >= freeOver ? 0 : fee
-  const remain = freeOver - total
-  // 받은 쿠폰은 상품 금액을 넘지 않게 할인 (무료배송 기준은 할인 전 금액)
-  const discount = coupon ? Math.min(coupon.amount, total) : 0
+  // 주문하기: 서랍을 닫고 결제 페이지로
+  const goCheckout = () => {
+    onClose()
+    navigate('/checkout')
+  }
 
   return (
     <div className={isOpen ? 'cart-drawer open' : 'cart-drawer'} inert={!isOpen}>
@@ -89,9 +84,9 @@ function CartDrawer({ isOpen, onClose }) {
                   </>
                 )}
                 <dt className="total">결제 예정 금액</dt>
-                <dd className="total price">{formatWon(total + delivery - discount)}</dd>
+                <dd className="total price">{formatWon(pay)}</dd>
               </dl>
-              <button type="button" className="btn-order" onClick={() => alert('주문 기능은 준비 중입니다.')}>
+              <button type="button" className="btn-order" onClick={goCheckout}>
                 주문하기
               </button>
             </div>

@@ -98,6 +98,9 @@ export function ShopProvider({ children }) {
     setCart((prev) => prev.filter((item) => item.key !== key))
   }
 
+  // 결제 완료 후 장바구니 비우기
+  const clearCart = () => setCart([])
+
   // 쿠폰은 { id, amount, issuedAt } 형태로 한 번만 발급
   const getCoupon = (id) => coupons.find((coupon) => coupon.id === id)
 
@@ -114,6 +117,7 @@ export function ShopProvider({ children }) {
         addToCart,
         changeQty,
         removeFromCart,
+        clearCart,
         wish,
         isWished,
         toggleWish,

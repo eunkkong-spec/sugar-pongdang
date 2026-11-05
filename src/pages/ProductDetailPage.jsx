@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import ProductSlider from '../components/ProductSlider.jsx'
 import KakaoIcon from '../components/KakaoIcon.jsx'
 import { useShop } from '../context/useShop.js'
@@ -71,6 +71,7 @@ function DetailContent({ product }) {
 
 function ProductDetail({ product, onCartOpen }) {
   const { addToCart, isWished, toggleWish } = useShop()
+  const navigate = useNavigate()
   const isCake = product.type === 'cake'
   const options = common.cake.options
   const info = common[product.type]
@@ -217,7 +218,11 @@ function ProductDetail({ product, onCartOpen }) {
               주문제작 신청
             </Link>
           ) : (
-            <button type="button" className="btn-buy" onClick={() => alert('주문 기능은 준비 중입니다.')}>
+            <button
+              type="button"
+              className="btn-buy"
+              onClick={() => navigate('/checkout', { state: { items: [{ id: product.id, size: selected.size, flavor: selected.flavor, qty }] } })}
+            >
               바로 구매
             </button>
           )}
