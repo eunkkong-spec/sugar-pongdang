@@ -44,3 +44,19 @@
   color: var(--white);
   font-size: 13px;
 }
+
+/* 아주 작은 화면(320px 등): 한 줄에 다 들어가게 글씨·간격 줄이기 */
+@media (max-width: 359px) {
+  .top-banner {
+    padding-left: 12px;
+    font-size: var(--fs-desc);
+  }
+
+  .top-banner a {
+    gap: 4px;
+  }
+
+  .top-banner .today {
+    padding: 0 4px;
+  }
+}
