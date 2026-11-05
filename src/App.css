@@ -31,7 +31,9 @@ button {
   max-width: 480px;
   min-height: 100vh;
   margin: 0 auto;
-  background: var(--peach-100);
+  background: var(--white);
+  /* PC에서 사이트 영역이 살짝 떠 보이게 */
+  box-shadow: 0 0 24px var(--shadow);
 }
 
 .section {

@@ -38,6 +38,7 @@
 
   /* 반투명 (딤 배경, 그림자) */
   --dim: rgba(74, 56, 48, 0.4);
+  --shadow: rgba(74, 56, 48, 0.12);
 
   --font-body: "Pretendard", -apple-system, sans-serif;
   --font-title: "Cafe24Ssurround", "Pretendard", sans-serif;

@@ -8,7 +8,7 @@ const colorGroups = [
   { title: 'Peach', names: ['peach-50', 'peach-100', 'peach-300', 'peach-500', 'peach-700'] },
   { title: 'Pistachio', names: ['pistachio-100', 'pistachio-300', 'pistachio-500', 'pistachio-700'] },
   { title: 'Base', names: ['choco', 'gray', 'line', 'sale', 'white'] },
-  { title: 'Brand · 기타', names: ['kakao', 'kakao-brown', 'insta-purple', 'insta-pink', 'insta-orange', 'dim'] },
+  { title: 'Brand · 기타', names: ['kakao', 'kakao-brown', 'insta-purple', 'insta-pink', 'insta-orange', 'dim', 'shadow'] },
 ]
 
 const fontSizes = [

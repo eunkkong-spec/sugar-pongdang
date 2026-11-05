@@ -22,13 +22,12 @@
 
 .category-tabs button {
   height: 100%;
-  border-bottom: 2px solid transparent;
   font-size: var(--fs-desc);
   color: var(--choco);
   white-space: nowrap;
 }
 
+/* 선택된 탭은 밑줄 없이 굵은 글씨로만 구분 */
 .category-tabs .active button {
-  border-bottom-color: var(--peach-500);
   font-weight: 700;
 }
