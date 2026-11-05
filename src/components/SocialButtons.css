@@ -1,0 +1,28 @@
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+  border-radius: var(--radius-badge);
+  font-size: var(--fs-name);
+  font-weight: 700;
+}
+
+.social-buttons .kakao {
+  background: var(--kakao);
+  color: var(--kakao-brown);
+}
+
+.social-buttons .google {
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--choco);
+}

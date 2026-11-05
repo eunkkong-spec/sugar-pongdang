@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useShop } from '../context/useShop.js'
 import { useDrawer } from '../hooks/useDrawer.js'
 import { mainMenus, categoryMenus } from '../data/menus.js'
@@ -5,7 +6,7 @@ import { contact } from '../data/contact.js'
 import './SideMenu.css'
 
 function SideMenu({ isOpen, onClose, onSelect }) {
-  const { wish } = useShop()
+  const { wish, user, logout } = useShop()
   useDrawer(isOpen, onClose)
 
   const select = (menu) => {
@@ -20,8 +21,25 @@ function SideMenu({ isOpen, onClose, onSelect }) {
       <aside className="panel">
         <div className="top">
           <div className="member">
-            <a href="#" className="login">로그인</a>
-            <a href="#" className="join">회원가입</a>
+            {user ? (
+              <>
+                <p className="hello">
+                  <strong>{user.name}</strong>님 반가워요
+                </p>
+                <button type="button" className="login" onClick={logout}>
+                  로그아웃
+                </button>
+              </>
+            ) : (
+              <>
+                <Link to="/login" className="login" onClick={onClose}>
+                  로그인
+                </Link>
+                <Link to="/join" className="join" onClick={onClose}>
+                  회원가입
+                </Link>
+              </>
+            )}
           </div>
           <button type="button" className="close" aria-label="메뉴 닫기" onClick={onClose}>
             ✕

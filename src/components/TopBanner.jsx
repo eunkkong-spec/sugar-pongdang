@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useShop } from '../context/useShop.js'
 import KakaoIcon from './KakaoIcon.jsx'
 import './TopBanner.css'
 
@@ -15,6 +17,7 @@ function isHiddenToday() {
 
 function TopBanner() {
   const [isOpen, setIsOpen] = useState(() => !isHiddenToday())
+  const { user } = useShop()
 
   const hideToday = () => {
     try {
@@ -25,14 +28,15 @@ function TopBanner() {
     setIsOpen(false)
   }
 
-  if (!isOpen) return null
+  // 로그인한 회원에게는 가입 안내가 필요 없어서 숨김
+  if (!isOpen || user) return null
 
   return (
     <div className="top-banner">
-      <a href="#">
+      <Link to="/join">
         <KakaoIcon size={20} />
         카카오 1초 로그인 <strong>회원가입</strong>
-      </a>
+      </Link>
       <div className="actions">
         <button type="button" className="today" onClick={hideToday}>
           오늘 하루 보지 않기

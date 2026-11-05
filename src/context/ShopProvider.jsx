@@ -28,6 +28,15 @@ function loadCart() {
   })
 }
 
+// 로그인한 회원 { name, provider } (데모 로그인, 없으면 null)
+function loadUser() {
+  try {
+    return JSON.parse(localStorage.getItem('user'))
+  } catch {
+    return null
+  }
+}
+
 function save(key, value) {
   try {
     localStorage.setItem(key, JSON.stringify(value))
@@ -40,10 +49,15 @@ export function ShopProvider({ children }) {
   const [cart, setCart] = useState(loadCart)
   const [wish, setWish] = useState(() => load('wish'))
   const [coupons, setCoupons] = useState(() => load('coupons'))
+  const [user, setUser] = useState(loadUser)
 
   useEffect(() => save('cart', cart), [cart])
   useEffect(() => save('wish', wish), [wish])
   useEffect(() => save('coupons', coupons), [coupons])
+  useEffect(() => save('user', user), [user])
+
+  const login = (info) => setUser(info)
+  const logout = () => setUser(null)
 
   const isWished = (id) => wish.includes(id)
 
@@ -106,6 +120,9 @@ export function ShopProvider({ children }) {
         coupons,
         getCoupon,
         issueCoupon,
+        user,
+        login,
+        logout,
       }}
     >
       {children}

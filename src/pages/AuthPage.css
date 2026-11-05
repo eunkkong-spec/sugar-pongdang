@@ -1,0 +1,178 @@
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.auth-page .logo {
+  align-self: center;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.auth-page .title {
+  margin-bottom: 24px;
+  font-size: var(--fs-section);
+  font-weight: normal;
+  text-align: center;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page form > label {
+  margin: 12px 0 8px;
+  font-size: var(--fs-desc);
+  font-weight: 700;
+}
+
+.auth-page input[type='email'],
+.auth-page input[type='password'],
+.auth-page input[type='text'],
+.auth-page input[type='tel'] {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--white);
+  color: var(--choco);
+  font: inherit;
+  font-size: var(--fs-desc);
+}
+
+.auth-page [aria-invalid='true'] {
+  border-color: var(--sale);
+}
+
+.auth-page .error {
+  margin-top: 4px;
+  font-size: var(--fs-small);
+  color: var(--sale);
+}
+
+.auth-page .btn-primary,
+.auth-page .btn-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  margin-top: 20px;
+  border-radius: var(--radius-badge);
+  font-size: var(--fs-name);
+  font-weight: 700;
+}
+
+.auth-page .btn-primary {
+  background: var(--peach-500);
+  color: var(--white);
+}
+
+.auth-page .btn-line {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  color: var(--gray);
+}
+
+.auth-page .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: var(--fs-small);
+  color: var(--gray);
+}
+
+.auth-page .links a {
+  font-weight: 700;
+  color: var(--peach-700);
+}
+
+.auth-page .links button {
+  color: var(--gray);
+}
+
+/* ── 간편 로그인 ── 처럼 양옆에 선 */
+.auth-page .divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 32px 0 16px;
+  font-size: var(--fs-small);
+  color: var(--gray);
+}
+
+.auth-page .divider::before,
+.auth-page .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.auth-page .quick {
+  margin-bottom: 12px;
+  font-size: var(--fs-desc);
+  font-weight: 700;
+  text-align: center;
+  color: var(--peach-700);
+}
+
+.auth-page .terms {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: var(--radius-card);
+  background: var(--peach-50);
+}
+
+.auth-page .check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-small);
+}
+
+.auth-page .check.all {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: var(--fs-desc);
+  font-weight: 700;
+}
+
+.auth-page .demo {
+  margin-top: 24px;
+  font-size: var(--fs-badge);
+  text-align: center;
+  color: var(--gray);
+}
+
+/* 완료 화면 */
+.auth-page .auth-done {
+  padding: 40px 20px;
+  border-radius: var(--radius-card);
+  background: var(--peach-50);
+  text-align: center;
+}
+
+.auth-page .auth-done .emoji {
+  font-size: 48px;
+}
+
+.auth-page .auth-done h2 {
+  margin: 8px 0;
+  font-size: var(--fs-section);
+  font-weight: normal;
+}
+
+.auth-page .auth-done > p {
+  font-size: var(--fs-desc);
+  color: var(--gray);
+}

@@ -13,6 +13,9 @@ import ProductListPage from './pages/ProductListPage.jsx'
 import ProductDetailPage from './pages/ProductDetailPage.jsx'
 import OrderPage from './pages/OrderPage.jsx'
 import ReviewsPage from './pages/ReviewsPage.jsx'
+import LoginPage from './pages/LoginPage.jsx'
+import JoinPage from './pages/JoinPage.jsx'
+import { useShop } from './context/useShop.js'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import StyleGuide from './pages/StyleGuide.jsx'
 import './App.css'
@@ -34,6 +37,7 @@ function ShopLayout() {
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [isWishOpen, setIsWishOpen] = useState(false)
   const [isCouponOpen, setIsCouponOpen] = useState(false)
+  const { user } = useShop()
 
   const closeMenu = useCallback(() => setIsMenuOpen(false), [])
   const closeCart = useCallback(() => setIsCartOpen(false), [])
@@ -105,7 +109,7 @@ function ShopLayout() {
       <Header
         onLogoClick={goHome}
         onMenuOpen={() => setIsMenuOpen(true)}
-        onMyClick={() => setIsMenuOpen(true)}
+        onMyClick={() => (user ? setIsMenuOpen(true) : navigate('/login'))}
         onWishOpen={() => setIsWishOpen(true)}
         onCartOpen={() => setIsCartOpen(true)}
         onTabSelect={selectTab}
@@ -126,6 +130,8 @@ function ShopLayout() {
           <Route path="/product/:id" element={<ProductDetailPage onCartOpen={() => setIsCartOpen(true)} />} />
           <Route path="/order" element={<OrderPage key={location.search} />} />
           <Route path="/reviews" element={<ReviewsPage key={location.search} />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/join" element={<JoinPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

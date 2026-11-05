@@ -58,11 +58,24 @@
   gap: 8px;
 }
 
-.side-menu .member a {
+.side-menu .member {
+  align-items: center;
+}
+
+.side-menu .member a,
+.side-menu .member button {
   padding: 8px 16px;
   border-radius: var(--radius-badge);
   font-size: var(--fs-desc);
   font-weight: 700;
+}
+
+.side-menu .hello {
+  font-size: var(--fs-desc);
+}
+
+.side-menu .hello strong {
+  color: var(--peach-700);
 }
 
 .side-menu .login {
