@@ -20,6 +20,15 @@
   flex-shrink: 0;
 }
 
+/* 탭이 화면보다 짧으면 가운데, 길면 왼쪽부터 가로 스크롤 */
+.category-tabs li:first-child {
+  margin-left: auto;
+}
+
+.category-tabs li:last-child {
+  margin-right: auto;
+}
+
 .category-tabs button {
   height: 100%;
   font-size: var(--fs-desc);
