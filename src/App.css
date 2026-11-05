@@ -36,6 +36,13 @@ button {
   box-shadow: 0 0 24px var(--shadow);
 }
 
+/* 넓은 화면: 양옆 빈 공간은 연한 핑크 (왼쪽엔 포토후기 패널) */
+@media (min-width: 1100px) {
+  body {
+    background: var(--peach-50);
+  }
+}
+
 .section {
   padding: 40px 16px 0;
 }

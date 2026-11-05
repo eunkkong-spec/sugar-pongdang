@@ -8,6 +8,7 @@ import WishDrawer from './components/WishDrawer.jsx'
 import CouponModal from './components/CouponModal.jsx'
 import ContactBox from './components/ContactBox.jsx'
 import Footer from './components/Footer.jsx'
+import DesktopSide from './components/DesktopSide.jsx'
 import HomePage from './pages/HomePage.jsx'
 import ProductListPage from './pages/ProductListPage.jsx'
 import ProductDetailPage from './pages/ProductDetailPage.jsx'
@@ -107,6 +108,7 @@ function ShopLayout() {
 
   return (
     <div className="wrap">
+      <DesktopSide />
       <TopBanner />
       <Header
         onLogoClick={goHome}

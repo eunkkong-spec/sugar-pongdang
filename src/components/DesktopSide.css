@@ -1,0 +1,125 @@
+/* 넓은 화면에서만: 쇼핑몰(480px) 왼쪽 빈 공간 가운데에 고정 */
+.desktop-side {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .desktop-side {
+    position: fixed;
+    top: 50%;
+    left: calc((100vw - 480px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 왼쪽 공간이 좁으면 양옆 24px씩 남기고 줄어듦 */
+    width: min(320px, calc((100vw - 480px) / 2 - 48px));
+    transform: translate(-50%, -50%);
+  }
+}
+
+.desktop-side .logo {
+  width: 160px;
+}
+
+.desktop-side .slogan {
+  margin-top: 8px;
+  font-size: var(--fs-desc);
+  color: var(--gray);
+}
+
+.desktop-side h2 {
+  margin-top: 40px;
+  font-family: var(--font-title);
+  font-size: var(--fs-name);
+  font-weight: normal;
+  color: var(--peach-700);
+}
+
+.desktop-side .card {
+  overflow: hidden;
+  /* 정사각형 사진이라 화면 높이가 낮으면 카드 폭을 줄여 패널이 넘치지 않게 */
+  width: min(100%, calc(100vh - 440px));
+  margin-top: 16px;
+  border-radius: var(--radius-card);
+  background: var(--white);
+  box-shadow: 0 4px 24px var(--shadow);
+}
+
+.desktop-side .card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.desktop-side .text {
+  padding: 16px 20px 20px;
+}
+
+.desktop-side .meta {
+  font-size: var(--fs-small);
+  color: var(--gray);
+}
+
+.desktop-side .stars {
+  color: var(--peach-500);
+}
+
+.desktop-side .content {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 8px;
+  font-size: var(--fs-desc);
+  line-height: 1.6;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.desktop-side .product {
+  margin-top: 8px;
+  font-size: var(--fs-badge);
+  color: var(--peach-700);
+}
+
+.desktop-side .controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.desktop-side .controls > button {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-badge);
+  background: var(--white);
+  font-size: var(--fs-price);
+  color: var(--choco);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.desktop-side .dots {
+  display: flex;
+  gap: 8px;
+}
+
+.desktop-side .dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-badge);
+  background: var(--peach-300);
+}
+
+.desktop-side .dots button[aria-current="true"] {
+  width: 20px;
+  background: var(--peach-500);
+}
+
+.desktop-side .btn-more {
+  margin-top: 24px;
+  padding: 12px 24px;
+  border-radius: var(--radius-badge);
+  background: var(--peach-500);
+  font-size: var(--fs-desc);
+  font-weight: 600;
+  color: var(--white);
+}
