@@ -361,16 +361,16 @@
     {
       "id": 21, "type": "cake", "category": "thanks",
       "image": "images/cakes/cake_21.jpg",
-      "title": "넘버 90 피규어 케이크",
-      "description": "가족의 어른을 위한 뜻깊은 생신을 준비하고 싶다면, 함께해온 세월에 대한 존경을 피규어와 숫자로 담아보세요.",
+      "title": "넘버 30 피규어 케이크",
+      "description": "새로운 30대를 맞는 서른 살 생일을 특별하게 축하하고 싶다면, 지나온 20대에 대한 응원을 피규어와 숫자로 담아보세요.",
       "originalPrice": 99000, "discountRate": 15,
-      "hashtags": ["#구순잔치", "#생신케이크", "#부모님선물"],
+      "hashtags": ["#서른살생일", "#생일케이크", "#친구선물"],
       "badges": ["커스텀"],
       "customizable": true, "leadTime": "최소 7일 전 예약",
       "rating": 4.9, "reviewCount": 42,
       "reviews": [
-        { "user": "천**", "rating": 5, "content": "할머니 구순 잔치에서 온 가족이 감동했어요.", "date": "2026-10-20" },
-        { "user": "방**", "rating": 5, "content": "어르신 입맛에 맞게 덜 달게 해주셨어요.", "date": "2026-10-02" }
+        { "user": "천**", "rating": 5, "content": "친구 서른 살 생일 파티에서 다들 사진 찍느라 바빴어요.", "date": "2026-10-20" },
+        { "user": "방**", "rating": 5, "content": "피규어가 정말 닮아서 남자친구가 엄청 좋아했어요.", "date": "2026-10-02" }
       ]
     },
     {
